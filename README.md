@@ -1,4 +1,4 @@
-## GASPARD GABORIT
+## Gaspard GABORIT
 
-### AFRAME
-* [labyrinthe](./aframe/labi.html)
+### LABYRINTHE
+* [labyrinthe-v0](./aframe/LABYRINTHE/labi.html)
