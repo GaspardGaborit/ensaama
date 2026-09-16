@@ -1,4 +1,4 @@
-## DNMADE 2
+## GASPARD GABORIT
 
 ### AFRAME
 * [labyrinthe](./aframe/labi.html)
