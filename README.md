@@ -1,4 +1,4 @@
 ## DNMADE 2
 
 ### AFRAME
-* [labyrinthe](./aframe)
+* [labyrinthe](./aframe/labi.html)
