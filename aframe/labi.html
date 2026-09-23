@@ -1,0 +1,100 @@
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/elbobo/aframe-multisrc-component/b6d23310/dist/0.3/aframe-multisrc-component.js"></script>
+  </head>
+
+  <body>  
+
+    <a-scene>
+
+        <a-assets>
+
+          <!-- TEXTURES -->
+          <img id="sol" src="./images/moquette bleu.png">
+          <img id="mur" src="./images/mur bois.png">
+          <img id="plafond" src="./images/plafond.png">
+          <img id="ciel" src="./images/ciel.png">
+
+          <!-- MIXINS -->
+          <a-mixin id="1" scale="0.06 2.5 0.45" material="src: #mur"></a-mixin>
+          <a-mixin id="2" scale="0.06 2.5 0.9" material="src: #mur"></a-mixin>
+          <a-mixin id="4" scale="0.06 2.5 1.8" material="src: #mur; repeat: 3.5"></a-mixin>
+          <a-mixin id="r" rotation="0 90 0"></a-mixin>
+
+        </a-assets>
+        
+
+        <!-- MURS -->
+        <a-box position="-1.5 1.25 -2.225" mixin="1"></a-box>
+        <a-box position="-1.725 1.25 -2.03" mixin="1 r"></a-box>
+        <a-box position="-1.022 1.25 -2.225" mixin="1"></a-box> 
+        <a-box position="-0.807 1.25 -2.421" mixin="1 r"></a-box>
+        <a-box position="-1.273 1.25 -2.904" mixin="1 r"></a-box>
+        <a-box position="-1.495 1.25 -3.326" mixin="2"></a-box>
+        <a-box position="-0.615 1.25 -2.845" mixin="2"></a-box>
+        <a-box position="-1.725 1.25 -3.747" mixin="1 r"></a-box>
+        <a-box position="-0.81 1.25 -3.323" mixin="1 r"></a-box>
+        <a-box position="-1.022 1.25 -3.518" mixin="1"></a-box>
+        <a-box position="-0.381 1.25 -2.904" mixin="1 r"></a-box>
+        <a-box position="-0.185 1.25 -2.672" mixin="1"></a-box>
+        <a-box position="0.234 1.25 -2.421" mixin="2 r"></a-box>
+        <a-box position="1.35 1.25 -3.351" mixin="1 r"></a-box>
+        <a-box position="1.562 1.25 -3.337" mixin="2"></a-box>
+        <a-box position="0.659 1.25 -3.793" mixin="4"></a-box>
+        <a-box position="0.464 1.25 -2.904" mixin="1 r"></a-box>  
+        <a-box position="0.046 1.25 -3.323" mixin="1 r"></a-box>
+        <a-box position="0.893 1.25 -3.747" mixin="1 r"></a-box>
+        <a-box position="0.264 1.25 -5.762" mixin="1"></a-box>
+        <a-box position="1.136 1.25 -5.996" mixin="4 r"></a-box>
+        <a-box position="-1.118 1.25 -5.996" mixin="4 r"></a-box>
+        <a-box position="-0.248 1.25 -5.569" mixin="2"></a-box>
+        <a-box position="-1.495 1.25 -5.563" mixin="2"></a-box>
+        <a-box position="-1.273 1.25 -5.143" mixin="1 r"></a-box>
+        <a-box position="-1.027 1.25 -4.722" mixin="2"></a-box>
+        <a-box position="-1.014 1.25 -4.256" mixin="2 r"></a-box>
+        <a-box position="-0.592 1.25 -4.638" mixin="4"></a-box>
+        <a-box position="-0.381 1.25 -3.768" mixin="1 r"></a-box>
+        <a-box position="-0.81 1.25 -5.508" mixin="1 r"></a-box>
+        <a-box position="1.767 1.25 -5.508" mixin="1 r"></a-box>
+        <a-box position="-1.745 1.25 -4.717" mixin="1 r"></a-box>
+        <a-box position="0.008 1.25 -4.717" mixin="1 r"></a-box>
+        <a-box position="-0.188 1.25 -4.246" mixin="2"></a-box>
+        <a-box position="1.554 1.25 -5.313" mixin="1"></a-box>
+        <a-box position="1.081 1.25 -5.119" mixin="2 r"></a-box>
+        <a-box position="0.661 0.76 -5.316" mixin="1"></a-box>
+        <a-box position="1.554 1.25 -4.256" mixin="2 r"></a-box>
+        <a-box position="1.134 1.25 -4.473" mixin="1"></a-box>
+        <a-box position="1.35 1.25 -4.667" mixin="1 r"></a-box>
+        <a-box position="1.134 1.25 -5.785" mixin="1"></a-box>
+
+
+        <!-- MURS CONTOURS -->
+        <a-box position="0.5 1.25 -2.03" rotation="0 90 0" material="src: #mur; repeat: 5.8" scale="0.06 2.5 3"></a-box>
+        <a-box position="-1.98 1.25 -4.011" material="src: #mur; repeat: 7" scale="0.06 2.5 4.022"></a-box>
+        <a-box position="2 1.25 -4" material="src: #mur; repeat: 7" scale="0.06 2.5 4"></a-box>
+        <a-box position="1.164 1.25 -2.707" material="src: #mur; repeat: 2.5" scale="0.06 2.5 1.35"></a-box>
+        <a-box position="0.264 1.25 -3.999" material="src: #mur; repeat: 4" scale="0.06 2.5 2.25"></a-box>
+
+        <!-- SOL / PLAFOND -->
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" material="src: #sol"></a-plane>
+        <a-plane position="0 2.5 -4" rotation="90 0 0" width="4" height="4" material="src: #plafond; repeat: 1.4 1.4"></a-plane>
+
+        <!-- CIEL -->
+        <a-sky color="black"></a-sky>
+
+        <!-- CAMERA -->
+        <a-entity camera="active: true" look-controls wasd-controls="acceleration: 5" position="-1.251 0.858 -1.492">
+          <a-entity  light="type: spot; angle: 40; color: #f0ffad;intensity: 1.5; distance: 3; decay: 3; penumbra:0.1 "  ></a-entity>
+        </a-entity>
+
+        <!-- LUMIERE AMBIANTE -->
+        <a-entity light="type: ambient; color: #f0ffad; intensity: 0.1" ></a-entity>
+
+    </a-scene>
+
+  </body>
+
+
+</html>
